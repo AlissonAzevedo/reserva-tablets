@@ -63,8 +63,10 @@ footer{
 
     main{
         padding: 0;
-        margin: 20px 0 0 0;
+        margin: 1rem;
         width:100%;
         box-shadow: none;
+        display: flex;
+        flex-direction: row;
     }
 }
