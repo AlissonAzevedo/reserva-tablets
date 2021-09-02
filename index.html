@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/records.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="main.js" defer></script>
+    
     <title>Reserva Tablets CRUD</title>
 </head>
 <body>
@@ -24,11 +25,12 @@
             <thead class="mx-auto">
                 <tr class="mx-auto">
                     <th>Nome</th>
-                    <th>E-mail</th>
+                    <th>Email</th>
                     <th>Quantidade</th>
                     <th>Turma</th>
                     <th>Data</th>
-                    <th>Horario</th>
+                    <th>Horario <p></p> Retirada</th>
+                    <th>Horario <p></p> Devolução</th>
                     <th>Ação</th>
                     
                 </tr>
@@ -41,6 +43,7 @@
                     <td>3 ano A</td>
                     <td>23/08/2021</td>
                     <td>07:00</td>
+                    <td>07:50</td>
                     <td>
                         <button type="button" class="button green btn-success">editar</button>
                         <button type="button" class="button red btn-danger">excluir</button>
@@ -53,6 +56,7 @@
                     <td>2 ano B</td>
                     <td>23/08/2021</td>
                     <td>07:00</td>
+                    <td>07:50</td>
                     <td>
                         <button type="button" class="button green btn-success">editar</button>
                         <button type="button" class="button red btn-danger">excluir</button>
@@ -65,6 +69,7 @@
                     <td>7 ano C</td>
                     <td>23/08/2021</td>
                     <td>07:00</td>
+                    <td>07:50</td>
                     <td>
                         <button type="button" class="button green btn-success">editar</button>
                         <button type="button" class="button red btn-danger">excluir</button>
@@ -79,12 +84,13 @@
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome">
-                    <input type="email" class="modal-field" placeholder="Email">
-                    <input type="number" min="1" max="40" class="modal-field" placeholder="Quantidade">
-                    <input type="text" class="modal-field" placeholder="Turma">
-                    <input type="date" class="modal-field" placeholder="Data">
-                    <input type="time" class="modal-field" placeholder="Horario">
+                    <input type="text" id="name" class="modal-field" placeholder="Nome">
+                    <input type="email" id="email" class="modal-field" placeholder="Email">
+                    <input type="number" id="value" min="1" max="40" class="modal-field" placeholder="Quantidade">
+                    <input type="text" id="nameClass" class="modal-field" placeholder="Turma">
+                    <input type="time" id="timeOpen" class="modal-field">
+                    <input type="time" id="timeExit" class="modal-field">
+                    <input type="date" id="date" class="modal-field">
                 </form>
                 <footer class="modal-footer">
                     <button class="button green">Salvar</button>

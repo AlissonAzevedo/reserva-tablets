@@ -5,14 +5,15 @@
 }
 
 .records th{
+    
     height: 50px;
     background-color: var(--primary-color);
-    padding-left: 20px;
-    font-size: 1.2rem;    
+    font-size: 1.2rem; 
+    text-align: center;   
 }
 .records td{
     height: 50px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 .records th:last-child,
@@ -20,6 +21,7 @@
     padding: 0;
     min-width: 140px;
     text-align: center;
+    
 }
 
 .records tr:hover{
